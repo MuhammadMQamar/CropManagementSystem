@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Sivajan Manikavasagar (Team Leader) N01240148
+Muhammad Qamar N01344609
+Noha Philips N01351336
+Tanvir Pahwa N01245843
+CENG 322 - RNC/D
+CENG 317 - 0NF
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Ivory"
+    tools:context=".OnboardingActivity"
+    android:padding="20dp">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck"></androidx.viewpager.widget.ViewPager>
+
+    <Button
+        android:id="@+id/skip_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:fontFamily=""
+        android:onClick="skip"
+        android:text=""
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+<RelativeLayout
+android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <Button
+        android:id="@+id/get_started_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/white"
+        android:onClick="getStarted"
+        android:text="@string/onb1"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="19sp"
+        android:visibility="invisible" />
+<LinearLayout
+android:id="@+id/dots"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:orientation="horizontal"/>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Ivory"
+        android:onClick="next"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

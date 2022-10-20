@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/realertivelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/HomePageColour"
+    tools:context=".SettingActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="295dp"
+        android:src="@drawable/ic_rectsmall" />
+
+    <Button
+        android:id="@+id/savesettingsbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsdefault"
+        android:text="@string/settingsSave"
+        android:textAllCaps="false"
+        android:layout_marginTop="625dp"
+        android:layout_marginStart="130dp"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="215dp"
+        android:src="@drawable/ic_rectsmall" />
+
+    <TextView
+        android:id="@+id/orilock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="234dp"
+        android:text="@string/lock_orientation"
+        android:fontFamily="@font/poppinsdefault"
+        android:textColor="@color/DefaultTitleText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/Notificationset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/DefaultTitleText"
+        android:layout_marginTop="312dp"
+        android:fontFamily="@font/poppinsdefault"
+        android:text="@string/enable_notifications"
+         />
+
+    <Switch
+        android:id="@+id/portlock"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="234dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="468dp"
+        android:text="@string/portrait_mode_only"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Switch
+        android:id="@+id/notficswitch"
+        android:layout_width="165dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="312dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vectorrectangle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="455dp"/>
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_rectsmall"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="375dp"/>
+    <TextView
+        android:id="@+id/Colourblindtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:textColor="@color/DefaultTitleText"
+        android:layout_marginTop="393dp"
+        android:fontFamily="@font/poppinsdefault"
+        android:text="@string/colour_blind_mode"
+        />
+
+    <RadioGroup
+        android:id="@+id/prefUnits"
+        android:layout_width="200dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="495dp"
+        android:textAlignment="center">
+
+        <RadioButton
+            android:id="@+id/celsiusButton"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppinsdefault"
+            android:layout_height="wrap_content"
+            android:text="@string/celsius" />
+
+        <RadioButton
+            android:id="@+id/fahrenheitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:fontFamily="@font/poppinsdefault"
+            android:text="@string/fahrenheit"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="165dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="470dp"
+        android:fontFamily="@font/poppinsdefault"
+        android:text="@string/prefTemp"
+        android:textAlignment="center"
+        android:textColor="@color/DefaultTitleText" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_sensorinfo" />
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/settingslogo"/>
+
+    <Switch
+        android:id="@+id/colourblindswitch"
+        android:layout_width="165dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="393dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="95dp"
+        android:text="@string/adjust_application_settings_here"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+</RelativeLayout>

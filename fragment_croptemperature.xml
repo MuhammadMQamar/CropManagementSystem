@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Sivajan Manikavasagar (Team Leader) N01240148
+Muhammad Qamar N01344609
+Noha Philips N01351336
+Tanvir Pahwa N01245843
+CENG 322 - RNC/D
+CENG 317 - 0NF
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/HomePageColour"
+    tools:context=".ui.CropTemperature.CropTemperature">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_sensorinfo" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginStart="34dp"
+        android:src="@drawable/templogo" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sensorbox"
+        android:layout_marginTop="210dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="95dp"
+        android:text="@string/measure_the_current_temperature"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/CropTemprTEXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="225dp"
+        android:fontFamily="@font/poppinsdefault"
+        android:text="@string/CropTemp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/tempLevelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="340dp"
+        android:fontFamily="@font/poppinsdefault"
+        android:gravity="center"
+        android:text="@string/TempOfCrop"
+        android:textColor="@color/DefaultTitleText"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/NohaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="560dp"
+        android:text="@string/NohaB1" />
+
+
+</RelativeLayout>

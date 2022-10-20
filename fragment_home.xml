@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Sivajan Manikavasagar (Team Leader) N01240148
+Muhammad Qamar N01344609
+Noha Philips N01351336
+Tanvir Pahwa N01245843
+CENG 322 - RNC/D
+CENG 317 - 0NF
+-->
+
+
+
+<RelativeLayout xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepagerelativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/HomePageColour"
+    tools:context=".ui.Home.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/welcome_to_"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/poppinsdefault"
+        android:gravity="center_horizontal|top"
+        android:text="Welcome to Crop Management"
+        android:textColor="@color/Black"
+        android:textSize="24dp" />
+
+    <RelativeLayout
+        android:id="@+id/homepagesecondary"
+        android:layout_width="363dp"
+        android:layout_height="586dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="125dp"
+        android:background="@color/HomePageColour">
+
+        <Button
+            android:id="@+id/waternowButton"
+            android:layout_width="175dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="333dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="580dp"
+            android:focusable="true"
+            android:text="Water Plants"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppinsdefault"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/homeplogo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/homepagelogo" />
+
+        <TextView
+            android:id="@+id/connectionText"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="152dp"
+            android:fontFamily="@font/poppinsdefault"
+            android:textSize="13dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="293dp"
+            android:gravity="center_horizontal"
+            android:text="Not Connected" />
+        <ImageView
+            android:id="@+id/connectionImage"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="296dp"
+            android:layout_marginLeft="130dp"
+            android:contentDescription="Image that shows the state of the sensor connection"
+            android:src="@drawable/redconnection"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_quickmenu"
+            android:layout_marginTop="400dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="410dp"
+            android:fontFamily="@font/poppinsdefault"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:text="Quick Menu"
+            />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="400dp"
+            android:scrollbars="none"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp">
+                <ImageView
+                    android:id="@+id/soilMoistImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/soilmoist" />
+                <ImageView
+                    android:id="@+id/taskSchedImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/tasksche" />
+                <ImageView
+                    android:id="@+id/cropTempImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/templogo" />
+                <ImageView
+                    android:id="@+id/airHumidityImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/windlogo" />
+                <ImageView
+                    android:id="@+id/waterLevelImage"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/waterrx" />
+
+
+
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+

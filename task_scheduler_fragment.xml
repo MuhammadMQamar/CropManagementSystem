@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Sivajan Manikavasagar (Team Leader) N01240148
+Muhammad Qamar N01344609
+Noha Philips N01351336
+Tanvir Pahwa N01245843
+CENG 322 - RNC/D
+CENG 317 - 0NF
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/HomePageColour"
+    tools:context=".TaskSchedulerActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/fab_content_desc"
+        app:srcCompat="@drawable/ic_plus"
+        app:fabSize="auto" />
+
+
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_sensorbox"
+    android:layout_marginTop="205dp"
+    android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sensorinfo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"/>
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginStart="35dp"
+        android:src="@drawable/taskschex"/>
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="210dp"
+        />
+    <TextView
+        android:id="@+id/textViewTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="95dp"
+        android:text="@string/add_a_date_and_the_app_will_automatically_water_your_plant_on_selected_dates"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+</FrameLayout>
